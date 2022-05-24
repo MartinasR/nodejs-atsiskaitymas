@@ -1,0 +1,36 @@
+<div class="headerWrapper">
+    <header class="header">
+    <div class="header__logo">
+     <a href="/">
+    <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Brain_Blogger_logo.svg/640px-Brain_Blogger_logo.svg.png" alt="logo" class="headerLogo">
+    </a>
+    </div>
+    <div class="headerNav">
+     <ul class="headerNavList">
+         <% if (isAuthed) { %>
+         <li>
+             <a href="/user">
+            <div class="profile">
+        <img src="https://icon-library.com/images/myaccount-icon/myaccount-icon-20.jpg"
+             alt="profile" width="40">
+            <span>
+            <%=token.username%>
+             </span>
+             </div>
+             </a>
+             <li>
+             <a href="/logout"><button>Logout</button></a>
+            </li>
+            </li>
+             <% } else { %>
+            <li>
+            <a href="/login">Login</a>
+             </li>
+             <li>
+            <a href="/register">Register</a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</header>
+</div>

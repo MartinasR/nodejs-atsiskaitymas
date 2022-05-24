@@ -1,63 +1,119 @@
-@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
-
 body {
-  background-color: blanchedalmond;
-  font-family: 'Koulen', cursive;
-  text-align: center;
-
-}
-
-.sortingList {
+  max-width: 100%;
   margin: 0 auto;
-  border: 4px solid black;
-  width: 450px;
-  height: 400px;
-  border-radius: 5px;
+  padding: 0;
+  background-color: blanchedalmond;
 }
 
-.input {
+.headerWrapper {
+  background-color: rgb(168, 209, 248);
+}
+
+.headerLogo {
   height: 50px;
-  width: 300px;
-  margin-bottom: 50px;
 }
 
-.ieskoti {
-  margin-bottom: 20px;
-  background-color: green;
-  height: 40px;
-  width: 80px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-.ieskoti:hover {
-  background-color: lawngreen;
+.headerNavList {
+  display: flex;
+  gap: 20px;
 }
 
-.reset {
-  height: 40px;
-  width: 80px;
-  background-color: yellow;
+main {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
-.reset:hover {
-  background-color: red;
-}
-
-.forma {
+.blog {
+  border: 1px solid black;
+  background-color: rgb(141, 218, 238);
+  color: black;
+  padding: 10px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 100px auto;
+  justify-content: center;
+
+}
+
+.truncate {
+  line-height: 1rem;
+  overflow: hidden;
+  max-height: 2rem;
   text-align: center;
-  gap: 25px;
 }
 
-.content {
+.blogInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.registerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.registerWrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sortWrapper {
+  width: 80%;
   margin: 0 auto;
-  width: 750px;
-  background-color: darkgray;
 }
 
-.content_title {
-  font-size: 25px;
-  color: blanchedalmond;
+.blogPage {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.blogPage h1 {
+  text-align: center;
+}
+
+.backBtn {
+  position: absolute;
+  top: 35px;
+  border-radius: 10px;
+  border: 1px solid rgb(36, 125, 197);
+  background-color: rgb(105, 105, 105);
+  color: white;
+  padding: 5px 10px;
+}
+
+@media (min-width: 768px) {
+  .blog {
+      width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .blog {
+      width: 30%;
+  }
 }

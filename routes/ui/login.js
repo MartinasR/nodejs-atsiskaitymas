@@ -1,7 +1,7 @@
 import express from "express";
 import con from '../SQL_connection.js';
-import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
+import bcrypt from 'bcrypt';
 import isAuthed from '../isAuthed.js'
 
 const router = express.Router()

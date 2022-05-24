@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "nodejsprojektas",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,19 +11,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.6",
-    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "express-session": "^1.17.3",
-    "flash": "^1.1.0",
     "jsonwebtoken": "^8.5.1",
-    "mysql2": "^2.3.3",
-    "node-fetch": "^3.2.4",
-    "nodemon": "^2.0.16",
-    "path": "^0.12.7"
+    "mysql2": "^2.3.3"
   }
 }
