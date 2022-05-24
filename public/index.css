@@ -109,11 +109,11 @@ main {
 
 @media (min-width: 768px) {
     .blog {
-        width: 40%;
+        width: 60%;
     }
 }
 @media (min-width: 1200px) {
     .blog {
-        width: 30%;
+        width: 40%;
     }
 }
