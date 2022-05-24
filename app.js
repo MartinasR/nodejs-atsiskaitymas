@@ -1,33 +1,26 @@
 import 'dotenv/config';
-import cookieParser from 'cookie-parser';
 import express from 'express';
-import cors from 'cors';
-import path from 'path';
-import userRouter from './routes/api/user.js';
-import blogRouter from './routes/api/blog.js'
-
-
-
+import index from './routes/index.js'
+import register from './routes/register.js'
+import users from './routes/api/users.js'
+import blog from './routes/api/blog.js'
+import path from 'path'
+import cookieParser from 'cookie-parser';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
-const corsOptions = {
-    origin: `localhost${PORT}`,
-    optionsSuccessStatus: 200
-  };
 
-  app.set('views', path.join('views'));
-app.set('view engine', 'ejs')
-
-  app.use(cors(corsOptions)); 
-app.use(express.json());
-app.use(express.urlencoded({ 
-    extended: false
-}));
-app.use(cookieParser());
+app.set('views', path.join('views'));
+app.set('view engine', 'ejs');
 
 app.use(express.static('public'))
-app.use('/api/user', userRouter)
-app.use('/api/blog', blogRouter)
+app.use(cookieParser())
+app.use(express.json())
+app.use(express.urlencoded( {extended:false} ));
 
-  app.listen(5000, () => console.log(`Serveris veikia ant ${PORT} porto.`));
+app.use('/api/users', users)
+app.use('/api/blog', blog)
+app.use('/register', register)
+app.use('/', index)
+
+app.listen(PORT, () => console.log(`Server running at: http://localhost:${PORT}`))
