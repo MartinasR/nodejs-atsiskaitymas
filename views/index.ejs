@@ -1,13 +1,13 @@
 <%- include('partials/head') %>
     <%- include('partials/header') %>
-        <div class="mainWrapper">
-            <div class="sortWrapper">
-            <form action="/" method="get" id="sortForm">
+        <div class="pagrindinis">
+            <div class="rikiavimo">
+            <form action="/" method="get" id="rikForm">
                 <label for="sort">Sort By</label>
                 <select name="sort" id="sort">
                     <option value="">---</option>
-                    <option value="title ASC" id="1">Title - ASC</option>
-                    <option value="title DESC" id="2">Title - DESC</option>
+                    <option value="title ASC" id="1">ASC</option>
+                    <option value="title DESC" id="2">DESC</option>
                 </select>
             </form>
             </div>
@@ -29,7 +29,7 @@
         </div>
 
         <script>
-            const sortForm = document.getElementById('sortForm');
+            const sortForm = document.getElementById('rikForm');
             const sortSelect = document.getElementById('sort');
             sortSelect.addEventListener('change', (e) => {
                 sortForm.submit()

@@ -62,7 +62,7 @@ main {
     border-top: 1px solid black;
 }
 
-.registerWrapper {
+.registracija {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,7 +81,7 @@ main {
     gap: 5px;
 }
 
-.sortWrapper {
+.rikiavimo {
     width: 80%;
     margin: 0 auto;
 }
@@ -97,7 +97,7 @@ main {
     text-align: center;
 }
 
-.backBtn {
+.backButton {
     position: absolute;
     top: 35px;
     border-radius: 10px;
