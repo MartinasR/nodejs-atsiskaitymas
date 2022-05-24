@@ -7,6 +7,8 @@ import userRouter from './routes/api/user.js';
 import blogRouter from './routes/api/blog.js'
 
 
+
+
 const app = express();
 const PORT = process.env.PORT || 8080;
 const corsOptions = {
