@@ -1,7 +1,7 @@
 <%- include('partials/head') %>
     <%- include('partials/header') %>
-        <div class="registerWrapper">
-            <h1>Register a new user</h1>
+        <div class="registerNew">
+            <h1>New user</h1>
             <form action="/register" method="post">
                 <label for="name">name</label>
                 <input type="text" name="name" >
@@ -22,7 +22,7 @@
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
                 if (password.value !== repeatPassword.value) {
-                    alert('Passwords do not match');
+                    alert('Pass doesnt match');
                     return;
                 }
                 form.submit();

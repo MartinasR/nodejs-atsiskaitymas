@@ -5,12 +5,12 @@ body {
     background-color: blanchedalmond;
 }
 
-.headerWrapper {
+.mainHeader {
     background-color: rgb(168, 209, 248);
 }
 
 .headerLogo {
-    height: 50px;
+    height: 55px;
 }
 
 .header {
@@ -70,7 +70,7 @@ main {
     gap: 10px;
 }
 
-.registerWrapper form {
+.registerNew form {
     display: flex;
     flex-direction: column;
 }
